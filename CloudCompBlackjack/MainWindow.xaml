@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CloudCompBlackjack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="883.5" Width="1376" Background="#505359">
+        Title="Blackjack" Height="883.5" Width="1376" Background="#505359">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
@@ -25,11 +25,11 @@
         </Viewbox>
 
         <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="1">
-            <Button Content="PLAY" Width="56" Click="Button_Click_1"/>
+            <Button Content="PLAY" Width="56" Name="btnPlay" Click="btnPlay_Click"/>
         </Viewbox>
 
         <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="2">
-            <Button Content="CREDITS" Width="56"/>
+            <Button Content="CREDITS" Width="56" Name="btnCredits" Click="btnCredits_Click"/>
         </Viewbox>
     </Grid>
 </Window>
