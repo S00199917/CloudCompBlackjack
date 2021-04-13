@@ -51,5 +51,11 @@
         <Viewbox Grid.Column="3" Grid.Row="2">
             <TextBlock Text="S00199917" Padding="10 10 10 10"/>
         </Viewbox>
+        
+        <Viewbox Grid.Column="2" Grid.Row="3">
+            <Button Name="btnClipboard" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btnClipboard_Click">
+                <Image Source="GitHub-Mark-120px-plus.png"/>
+            </Button>
+        </Viewbox>
     </Grid>
 </Window>

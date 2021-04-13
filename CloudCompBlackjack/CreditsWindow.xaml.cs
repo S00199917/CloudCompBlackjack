@@ -31,5 +31,10 @@ namespace CloudCompBlackjack
             mainWindow.Show();
             this.Close();
         }
+
+        private void btnClipboard_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText("https://github.com/jackMalone2001/CloudCompBlackjack");
+        }
     }
 }

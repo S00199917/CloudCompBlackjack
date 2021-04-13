@@ -108,5 +108,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GitHub-Mark-64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GitHub-Mark-120px-plus.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
