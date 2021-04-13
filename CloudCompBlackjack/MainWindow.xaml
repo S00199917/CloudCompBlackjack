@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CloudCompBlackjack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="883.5" Width="1376" Background="#505359">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Stretch="Uniform" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" >
+            <TextBlock Text="BLACKJACK" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200" Margin="28,0,29,73"/>
+        </Viewbox>
+
+        <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="1">
+            <Button Content="PLAY" Width="56" Click="Button_Click_1"/>
+        </Viewbox>
+
+        <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="2">
+            <Button Content="CREDITS" Width="56"/>
+        </Viewbox>
     </Grid>
 </Window>
