@@ -10,33 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CloudCompBlackjack
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();
             this.WindowState = System.Windows.WindowState.Maximized;
         }
 
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            LoginWindow login = new LoginWindow();
-            login.Show();
-            this.Close();
-        }
-
-        private void btnCredits_Click(object sender, RoutedEventArgs e)
-        {
-            CreditsWindow credits = new CreditsWindow();
-            credits.Show();
+            MainWindow main = new MainWindow();
+            main.Show();
             this.Close();
         }
     }

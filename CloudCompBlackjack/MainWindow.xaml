@@ -23,9 +23,9 @@
         <Viewbox Stretch="Uniform" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" >
             <TextBlock Text="BLACKJACK" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200" Margin="28,0,29,73"/>
         </Viewbox>
-
+        
         <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="1">
-            <Button Content="PLAY" Width="56" Name="btnPlay" Click="btnPlay_Click"/>
+            <Button Content="LOGIN" Width="56" Name="btnPlay" Click="btnPlay_Click"/>
         </Viewbox>
 
         <Viewbox Stretch="Uniform" Grid.Row="2" Grid.Column="2">

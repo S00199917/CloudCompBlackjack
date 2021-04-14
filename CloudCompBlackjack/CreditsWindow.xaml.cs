@@ -36,5 +36,10 @@ namespace CloudCompBlackjack
         {
             Clipboard.SetText("https://github.com/jackMalone2001/CloudCompBlackjack");
         }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+        }
     }
 }

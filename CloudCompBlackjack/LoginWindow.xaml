@@ -1,0 +1,101 @@
+﻿<Window x:Class="CloudCompBlackjack.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CloudCompBlackjack"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800" Background="#505359">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Viewbox>
+            <Button Name="btnBack" Content="BACK" Click="btnBack_Click"/>
+        </Viewbox>
+
+        <!--#region Login-->
+        <Viewbox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock Text="LOGIN"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="1">
+            <TextBlock Text="Username"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="2">
+            <TextBox Name="tbxLogUsername" Width="110" Background="#FF4A5161" Foreground="#FFE8E8E8"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="6" Grid.Column="1">
+            <TextBlock Text="Password"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="6" Grid.Column="2">
+            <TextBox Name="tbxLogPassword" Width="110" Background="#FF4A5161" Foreground="#FFE8E8E8"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2">
+            <Button x:Name="btnLogin" Content="Login" Width="63"/>
+        </Viewbox>
+        <!--#endregion-->
+
+        <!--#region SignUp-->
+
+        <Viewbox Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2">
+            <TextBlock Text="SIGN-UP"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="4">
+            <TextBlock Text="Username"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="5">
+            <TextBox Name="tbxSignUsername" Width="110" Background="#FF4A5161" Foreground="#FFE8E8E8"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="6" Grid.Column="4">
+            <TextBlock Text="Password"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="6" Grid.Column="5">
+            <TextBox Name="tbxSignPassword" Width="110" Background="#FF4A5161" Foreground="#FFE8E8E8"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="8" Grid.Column="4">
+            <TextBlock Text="Confirm"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="8" Grid.Column="5">
+            <TextBox Name="tbxSignConfirm" Width="110" Background="#FF4A5161" Foreground="#FFE8E8E8"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="10" Grid.Column="4" Grid.ColumnSpan="2">
+            <Button x:Name="btnSignup" Content="Sign-Up" Width="63"/>
+        </Viewbox>
+
+        <!--#endregion-->
+    </Grid>
+</Window>
